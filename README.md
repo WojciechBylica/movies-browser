@@ -16,7 +16,7 @@
 
  # DEMO
 
-[demo](https://patrycja-i-lesniak.github.io/movies-browser/ "Movies Browser")
+[demo](https://wojciechbylica.github.io/movies-browser/ "Movies Browser")
 
   </a>
 
