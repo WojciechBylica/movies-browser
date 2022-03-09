@@ -3,6 +3,7 @@ const colorNames = {
   mystic: '#E4E6F0',
   black: '#000000',
   darkGrey: '#7E839A',
+  charade: '#262834',
   white: '#FFFFFF',
   blue: '#0044CC',
   lightBlue: '#D6E4FF',
@@ -32,7 +33,7 @@ const common = {
 export const theme = {
   colors: {
     textPrimary: colorNames.black,
-    textSecondary: colorNames.darkGrey,
+    textSecondary: colorNames.charade,
     textTertiary: colorNames.white,
     navigationBackground: colorNames.black,
     headerBackground: colorNames.black,
