@@ -8,7 +8,7 @@ export const ThemeSwitch = () => {
 
   return (
     <Wrapper>
-      <Button onClick={() => dispatch(toggleTheme())}>
+      <Button onClick={() => dispatch(toggleTheme())} aria-label="switch theme">
         <Text>Dark mode {isDarkTheme ? 'on' : 'off'}</Text>
         <Box>
           <IconWrapper moveToRight={isDarkTheme}>
