@@ -16,6 +16,8 @@ export const RateWrapper = styled.div`
 
 export const StarIcon = styled.img`
   width: 24px;
+  height: auto;
+  aspect-ratio: 1/1;
   grid-area: star;
   margin-right: 8px;
 
