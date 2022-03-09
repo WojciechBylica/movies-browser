@@ -15,6 +15,7 @@ import {
 export const Pagination = () => {
   const replaceQueryParameter = useReplaceQueryParameter();
   const [currentPage, totalPages] = useAPIPages();
+  const maxTotalPages = totalPages > 500 ? 500 : totalPages;
 
   return (
     <Wrapper>
@@ -59,13 +60,13 @@ export const Pagination = () => {
         <Caption>Page</Caption>
         <Caption semibold>{currentPage}</Caption>
         <Caption>of</Caption>
-        <Caption semibold>{totalPages}</Caption>
+        <Caption semibold>{maxTotalPages}</Caption>
       </CaptionsWrapper>
       <PaginationList>
         <li>
           <PaginationButton
             aria-label="next page"
-            disabled={currentPage === totalPages}
+            disabled={currentPage === maxTotalPages}
             onClick={() =>
               replaceQueryParameter({
                 key: paginationQueryParamName,
@@ -75,28 +76,34 @@ export const Pagination = () => {
           >
             <ButtonContentWrapper smallStep>
               <ButtonText>Next</ButtonText>
-              <PaginationArrow forward disabled={currentPage === totalPages} />
+              <PaginationArrow
+                forward
+                disabled={currentPage === maxTotalPages}
+              />
             </ButtonContentWrapper>
           </PaginationButton>
         </li>
         <li>
           <PaginationButton
             aria-label="last page"
-            disabled={currentPage === totalPages}
+            disabled={currentPage === maxTotalPages}
             onClick={() =>
               replaceQueryParameter({
                 key: paginationQueryParamName,
-                value: totalPages,
+                value: maxTotalPages,
               })
             }
           >
             <ButtonContentWrapper>
               <ButtonText>Last</ButtonText>
-              <PaginationArrow forward disabled={currentPage === totalPages} />
+              <PaginationArrow
+                forward
+                disabled={currentPage === maxTotalPages}
+              />
               <PaginationArrow
                 extra
                 forward
-                disabled={currentPage === totalPages}
+                disabled={currentPage === maxTotalPages}
               />
             </ButtonContentWrapper>
           </PaginationButton>
