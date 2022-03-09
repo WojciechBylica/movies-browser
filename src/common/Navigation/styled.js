@@ -55,6 +55,9 @@ export const Logo = styled(NavLink).attrs(() => ({ activeClassName }))`
 `;
 
 export const VideoIcon = styled.img`
+  width: 34px;
+  height: auto;
+  aspect-ratio: 34/27;
   color: ${({ theme }) => theme.colors.itemsColor};
   margin: 0 24px 0 0;
 
