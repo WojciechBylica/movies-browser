@@ -21,6 +21,7 @@ export const Pagination = () => {
       <PaginationList>
         <li>
           <PaginationButton
+            aria-label="first page"
             disabled={currentPage === 1}
             onClick={() =>
               replaceQueryParameter({
@@ -38,6 +39,7 @@ export const Pagination = () => {
         </li>
         <li>
           <PaginationButton
+            aria-label="previous page"
             disabled={currentPage === 1}
             onClick={() =>
               replaceQueryParameter({
@@ -62,6 +64,7 @@ export const Pagination = () => {
       <PaginationList>
         <li>
           <PaginationButton
+            aria-label="next page"
             disabled={currentPage === totalPages}
             onClick={() =>
               replaceQueryParameter({
@@ -78,6 +81,7 @@ export const Pagination = () => {
         </li>
         <li>
           <PaginationButton
+            aria-label="last page"
             disabled={currentPage === totalPages}
             onClick={() =>
               replaceQueryParameter({
