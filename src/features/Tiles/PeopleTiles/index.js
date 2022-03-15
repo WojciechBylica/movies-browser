@@ -15,6 +15,7 @@ import { ShowMoreButton } from '../ShowMoreButton';
 import { selectConfiguration } from '../../../core/App/movieBrowserSlice';
 import { useGetScreenWidth } from '../../../useGetScreenWidth';
 import { theme } from '../../../core/App/theme';
+import PropTypes from 'prop-types';
 
 const PeopleTiles = ({ title }) => {
   const peopleData = useSelector(selectPeopleData);
@@ -92,3 +93,7 @@ const PeopleTiles = ({ title }) => {
 };
 
 export default PeopleTiles;
+
+PeopleTiles.propTypes = {
+  title: PropTypes.string,
+};

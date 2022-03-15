@@ -1,6 +1,7 @@
 import { ButtonContentWrapper, ShowMore } from './styled';
 import { useState } from 'react';
 import { Arrow } from '../Arrow';
+import PropTypes from 'prop-types';
 
 export const ShowMoreBiography = ({ biography }) => {
   const [showMore, setShowMore] = useState(false);
@@ -29,4 +30,9 @@ export const ShowMoreButton = ({ showMore, setShowMore }) => {
       </ButtonContentWrapper>
     </ShowMore>
   );
+};
+
+ShowMoreButton.propTypes = {
+  showMore: PropTypes.bool.isRequired,
+  setShowMore: PropTypes.func.isRequired,
 };

@@ -1,7 +1,6 @@
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
 import { nanoid } from '@reduxjs/toolkit';
-
 import { selectPersonCredits } from '../../PopularPeople/PersonDetails/personDetailsSlice';
 import {
   selectConfiguration,
@@ -29,6 +28,7 @@ import { ShowMoreButton } from '../ShowMoreButton';
 import { StyledSection } from '../../../common/MovieAndPersonSection';
 import { useGetScreenWidth } from '../../../useGetScreenWidth';
 import { theme } from '../../../core/App/theme';
+import PropTypes from 'prop-types';
 
 const MovieTiles = ({ title }) => {
   const moviesData = useSelector(selectMoviesData);
@@ -171,3 +171,7 @@ const MovieTiles = ({ title }) => {
 };
 
 export default MovieTiles;
+
+MovieTiles.propTypes = {
+  title: PropTypes.string.isRequired,
+};
