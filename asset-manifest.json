@@ -4,12 +4,12 @@
     "main.js.map": "/movies-browser/static/js/main.d18ec186.chunk.js.map",
     "runtime-main.js": "/movies-browser/static/js/runtime-main.07e315b2.js",
     "runtime-main.js.map": "/movies-browser/static/js/runtime-main.07e315b2.js.map",
-    "static/js/2.a270ba53.chunk.js": "/movies-browser/static/js/2.a270ba53.chunk.js",
-    "static/js/2.a270ba53.chunk.js.map": "/movies-browser/static/js/2.a270ba53.chunk.js.map",
+    "static/js/2.5567f717.chunk.js": "/movies-browser/static/js/2.5567f717.chunk.js",
+    "static/js/2.5567f717.chunk.js.map": "/movies-browser/static/js/2.5567f717.chunk.js.map",
     "static/js/3.ecb76c75.chunk.js": "/movies-browser/static/js/3.ecb76c75.chunk.js",
     "static/js/3.ecb76c75.chunk.js.map": "/movies-browser/static/js/3.ecb76c75.chunk.js.map",
     "index.html": "/movies-browser/index.html",
-    "static/js/2.a270ba53.chunk.js.LICENSE.txt": "/movies-browser/static/js/2.a270ba53.chunk.js.LICENSE.txt",
+    "static/js/2.5567f717.chunk.js.LICENSE.txt": "/movies-browser/static/js/2.5567f717.chunk.js.LICENSE.txt",
     "static/media/NoResultsPicture.03778e10.svg": "/movies-browser/static/media/NoResultsPicture.03778e10.svg",
     "static/media/dangerIcon.6c350e95.svg": "/movies-browser/static/media/dangerIcon.6c350e95.svg",
     "static/media/favicon.60b1f07f.svg": "/movies-browser/static/media/favicon.60b1f07f.svg",
@@ -23,7 +23,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.07e315b2.js",
-    "static/js/2.a270ba53.chunk.js",
+    "static/js/2.5567f717.chunk.js",
     "static/js/main.d18ec186.chunk.js"
   ]
 }
